@@ -6,10 +6,19 @@
     <title>LOTTERY</title>
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/notiflix.min.css" />
   </head>
 
   <body>
-    <h1>L o t t e r y</h1>
+    <h1 class="heading">
+      <svg width="80" height="80">
+        <use href="./icons/icons.svg#icon-fortune"></use>
+      </svg>
+      L o t t e r y
+      <svg width="80" height="80">
+        <use href="./icons/icons.svg#icon-fortune"></use>
+      </svg>
+    </h1>
     <div class="number-selection">
       <input type="checkbox" id="number1" class="number-checkbox" />
       <label for="number1" class="number-label">
@@ -201,42 +210,66 @@
       <label for="number39" class="number-label">
         <img src="./images/number39.png" alt="Numer 39" />
       </label>
+
       <input type="checkbox" id="number40" class="number-checkbox" />
       <label for="number40" class="number-label">
         <img src="./images/number40.png" alt="Numer 40" />
       </label>
+
       <input type="checkbox" id="number41" class="number-checkbox" />
       <label for="number41" class="number-label">
-        <img src="./images/number41.png" alt="Numer 41" /> </label
-      ><input type="checkbox" id="number42" class="number-checkbox" />
+        <img src="./images/number41.png" alt="Numer 41" />
+      </label>
+
+      <input type="checkbox" id="number42" class="number-checkbox" />
       <label for="number42" class="number-label">
-        <img src="./images/number42.png" alt="Numer 42" /> </label
-      ><input type="checkbox" id="number43" class="number-checkbox" />
+        <img src="./images/number42.png" alt="Numer 42" />
+      </label>
+
+      <input type="checkbox" id="number43" class="number-checkbox" />
       <label for="number43" class="number-label">
-        <img src="./images/number43.png" alt="Numer 43" /> </label
-      ><input type="checkbox" id="number44" class="number-checkbox" />
+        <img src="./images/number43.png" alt="Numer 43" />
+      </label>
+
+      <input type="checkbox" id="number44" class="number-checkbox" />
       <label for="number44" class="number-label">
-        <img src="./images/number44.png" alt="Numer 44" /> </label
-      ><input type="checkbox" id="number45" class="number-checkbox" />
+        <img src="./images/number44.png" alt="Numer 44" />
+      </label>
+
+      <input type="checkbox" id="number45" class="number-checkbox" />
       <label for="number45" class="number-label">
-        <img src="./images/number45.png" alt="Numer 45" /> </label
-      ><input type="checkbox" id="number46" class="number-checkbox" />
+        <img src="./images/number45.png" alt="Numer 45" />
+      </label>
+
+      <input type="checkbox" id="number46" class="number-checkbox" />
       <label for="number46" class="number-label">
-        <img src="./images/number46.png" alt="Numer 46" /> </label
-      ><input type="checkbox" id="number47" class="number-checkbox" />
+        <img src="./images/number46.png" alt="Numer 46" />
+      </label>
+
+      <input type="checkbox" id="number47" class="number-checkbox" />
       <label for="number47" class="number-label">
-        <img src="./images/number47.png" alt="Numer 47" /> </label
-      ><input type="checkbox" id="number48" class="number-checkbox" />
+        <img src="./images/number47.png" alt="Numer 47" />
+      </label>
+
+      <input type="checkbox" id="number48" class="number-checkbox" />
       <label for="number48" class="number-label">
-        <img src="./images/number48.png" alt="Numer 48" /> </label
-      ><input type="checkbox" id="number49" class="number-checkbox" />
+        <img src="./images/number48.png" alt="Numer 48" />
+      </label>
+
+      <input type="checkbox" id="number49" class="number-checkbox" />
       <label for="number49" class="number-label">
         <img src="./images/number49.png" alt="Numer 49" />
       </label>
     </div>
-    <button class="button">Start the lotery</button>
-    <button class="button">Give me results</button>
-    <div class="result"></div>
+    <h2 class="chosen-six-heading">
+      <svg width="50" height="50">
+        <use href="./icons/icons.svg#icon-target"></use>
+      </svg>
+      THE CHOSEN SIX:
+    </h2>
+    <div class="the-chosen-six"></div>
+    <button class="button">Start the lottery</button>
+    <script src="./js/notiflix.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

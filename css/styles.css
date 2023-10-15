@@ -12,9 +12,13 @@ body {
   );
   background-size: 100%;
 }
-h1 {
+.heading {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
   background-color: #e4b013;
-  padding: 20px 300px;
+  padding: 20px 200px;
   border-radius: 50px;
   text-transform: uppercase;
 }
@@ -59,4 +63,24 @@ img {
 }
 .button:disabled {
   color: transparent;
+}
+.chosen-six-heading {
+  background-color: #e4b013;
+  padding: 15px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.the-chosen-six {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e4b013;
+  border-radius: 50px;
+}
+.the-chosen-six img {
+  width: 150px;
+  height: 150px;
 }

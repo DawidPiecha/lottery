@@ -31,14 +31,14 @@ const updateChosenNumbers = () => {
       selectedCount++;
     }
     if (selectedCount === 6) {
-      startButton.style.display = "block";
+      startButton.style.display = "flex";
     }
     if (selectedCount !== 6) {
       startButton.style.display = "none";
     }
     // If 6 checkboxes are selected, notify and disable additional checkboxes
     if (selectedCount >= 6) {
-      Notiflix.Notify.info("You cannot choose more than SIX numbers!");
+      Notiflix.Notify.info("Numbers selected. Try your luck! ");
       for (let j = 0; j < checkboxes.length; j++) {
         if (!checkboxes[j].checked) {
           checkboxes[j].disabled = true;

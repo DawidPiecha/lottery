@@ -21,13 +21,17 @@ body {
   padding: 20px 200px;
   border-radius: 50px;
   text-transform: uppercase;
+  color: rgb(78, 18, 148);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
+
 svg {
   display: block;
 }
 img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .number-selection {
   display: flex;
@@ -44,9 +48,11 @@ img {
 .number-checkbox {
   display: none;
 }
-
+.number-checkbox:disabled + .number-label {
+  transform: scale(0.7);
+}
 .number-checkbox:checked + .number-label {
-  transform: scale(1.4); /* Powiększ obrazek */
+  transform: scale(1.4);
 }
 .button {
   border: 0;
@@ -59,7 +65,7 @@ img {
   cursor: pointer;
 }
 .button:active {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .button:disabled {
   color: transparent;
@@ -81,6 +87,6 @@ img {
   border-radius: 50px;
 }
 .the-chosen-six img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }

@@ -1,9 +1,8 @@
 const checkboxes = document.querySelectorAll(".number-checkbox");
-
 const chosenSixDiv = document.querySelector(".the-chosen-six");
 
 // Function to update the chosen numbers
-function updateChosenNumbers() {
+const updateChosenNumbers = () => {
   // Clear the "the-chosen-six" div
   chosenSixDiv.innerHTML = "";
 
@@ -27,15 +26,25 @@ function updateChosenNumbers() {
       chosenSixDiv.appendChild(selectedNumberDiv);
 
       selectedCount++;
+    }
 
-      // If 6 checkboxes are selected, return to exit the function
-      if (selectedCount >= 6) {
-        Notiflix.Notify.failure("You cannot choose more than SIX numbers!");
-        return;
+    // If 6 checkboxes are selected, notify and disable additional checkboxes
+    if (selectedCount >= 6) {
+      Notiflix.Notify.info("You cannot choose more than SIX numbers!");
+      for (let j = 0; j < checkboxes.length; j++) {
+        if (!checkboxes[j].checked) {
+          checkboxes[j].disabled = true;
+        }
       }
+      return;
     }
   }
-}
+
+  // Re-enable all checkboxes if less than 6 are selected
+  for (let i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].disabled = false;
+  }
+};
 
 // Add event listeners to checkboxes
 checkboxes.forEach((checkbox) => {

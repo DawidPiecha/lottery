@@ -44,6 +44,9 @@ img {
   cursor: pointer;
   transition: transform 0.2s;
 }
+.number-label:hover {
+  transform: translateY(8px);
+}
 
 .number-checkbox {
   display: none;

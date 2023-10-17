@@ -1,4 +1,6 @@
 const lotteryResults = document.querySelector(".lottery-results");
+const tryAgain = document.querySelector(".try-again");
+tryAgain.style.display = "none";
 
 const lotteryFunction = () => {
   let results = [];
@@ -27,6 +29,7 @@ const resultsShow = (results) => {
     lotteryResults.appendChild(drawnNumberDiv);
     startButton.textContent = "LOTTERY  RESULTS:";
     startButton.disabled = true;
+    tryAgain.style.display = "flex";
     checkboxesDisable();
   });
 };
@@ -38,3 +41,6 @@ const checkboxesDisable = () => {
 };
 
 startButton.addEventListener("click", lotteryFunction);
+tryAgain.addEventListener("click", () => {
+  location.reload();
+});

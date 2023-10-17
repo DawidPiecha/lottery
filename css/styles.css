@@ -90,7 +90,6 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #e4b013;
   border-radius: 50px;
 }
 .lottery-results {

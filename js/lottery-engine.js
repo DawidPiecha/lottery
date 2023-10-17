@@ -27,6 +27,13 @@ const resultsShow = (results) => {
     lotteryResults.appendChild(drawnNumberDiv);
     startButton.textContent = "LOTTERY  RESULTS:";
     startButton.disabled = true;
+    checkboxesDisable();
+  });
+};
+
+const checkboxesDisable = () => {
+  checkboxes.forEach((checkbox) => {
+    checkbox.disabled = true;
   });
 };
 
